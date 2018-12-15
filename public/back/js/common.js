@@ -17,9 +17,9 @@ $(document).ajaxComplete(function () {
 
 
     ; (function () {
-        $('.list').on('click', function () {
+        $('.topbar .list').on('click', function () {
             $('.lt-aside').toggleClass('hidemenu');
             $('.topbar').toggleClass('hidemenu');
-            $('.container-fluid').toggleClass('hidemenu');
+            $('.lt-main').toggleClass('hidemenu');
         })
     })()

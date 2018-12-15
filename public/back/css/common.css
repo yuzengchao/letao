@@ -75,7 +75,15 @@ ul{
 }
 
 
-
+.lt-main{
+    padding-top: 50px;
+    padding-left: 180px;
+    transition: all 1s;
+    height: 1000px;
+}
+.lt-main.hidemenu{
+    padding-left:0;
+}
 
 .lt-main .topbar{
     height: 50px;
@@ -98,10 +106,23 @@ ul{
     color: #fff;
     text-align: center;
 }
-.container-fluid {
-    padding-left: 180px;
-    transition: all 1s;
+.lt-main .container-fluid .breadcrumb{
+    margin-top: 20px;
 }
-.container-fluid.hidemenu{
-    padding-left:0;
-} 
+.lt-main .echarts-box{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.lt-main .echarts-box #echarts-left,
+.lt-main .echarts-box #echarts-right{
+    height: 400px;
+    width: 48%;
+    /* background-color: pink; */
+
+}
+
+.lt-mask .modal-body{
+    color: #A94442;
+
+}
