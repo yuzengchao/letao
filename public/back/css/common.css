@@ -1,0 +1,107 @@
+a:link,
+a:hover,
+a:visited,
+a:active{
+    text-decoration: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+}
+
+.lt-aside{
+    width: 180px;
+    height: 100%;
+    background-color: #222D32;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    transition: all 1s;
+}
+.lt-aside.hidemenu{
+    left: -180px;
+}
+.lt-aside .title {
+    width: 180px;
+    height: 50px;
+    background-color: #367FA9;
+}
+.lt-aside .title a{
+    display: block;
+    color: #fff;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+
+}
+.lt-aside .user{
+    width: 180px;
+    height: 180px; 
+    padding-top: 30px;  
+}
+.lt-aside .user img{
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.lt-aside .user p{
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.lt-aside .list li a{
+    display: block;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 40px;
+    border-left: 3px solid transparent;
+}
+.lt-aside .list li a i{
+    margin-right: 5px;
+}
+.lt-aside .list .secondlist{
+    display: none;
+}
+.lt-aside .list .secondlist a{
+    padding-left: 60px;
+}
+
+
+
+
+.lt-main .topbar{
+    height: 50px;
+    width: 100%;
+    background-color: #3C8DBC;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-left: 180px;
+    transition: all 1s;
+}
+.lt-main .topbar.hidemenu{
+    padding-left: 0;
+}
+.lt-main .topbar a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+.container-fluid {
+    padding-left: 180px;
+    transition: all 1s;
+}
+.container-fluid.hidemenu{
+    padding-left:0;
+} 

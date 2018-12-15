@@ -10,7 +10,7 @@ body{
     font-size: 20px;
     text-align: center;
 }   
-.form .password i{
+#form .password i{
     display: inline-block;
     width: 1em;
 }
