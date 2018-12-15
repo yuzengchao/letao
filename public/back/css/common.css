@@ -64,6 +64,11 @@ ul{
     padding-left: 40px;
     border-left: 3px solid transparent;
 }
+.lt-aside .list li .light{
+    border-left:3px solid #006699;
+    background-color: #1D1F21;
+
+}
 .lt-aside .list li a i{
     margin-right: 5px;
 }
@@ -125,4 +130,9 @@ ul{
 .lt-mask .modal-body{
     color: #A94442;
 
+}
+.table.table-bordered th,
+.table.table-bordered td {
+  text-align: center;
+  /* vertical-align: middle; */
 }

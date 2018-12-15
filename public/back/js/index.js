@@ -1,17 +1,4 @@
-$(function () {
-    $('.logout').on('click', function () {
-        $.ajax({
-            type: 'get',
-            url: '/employee/employeeLogout',
-            dataType: 'json',
-            success: function (res) {
-                if (res.success) {
-                    location.href = 'login.html'
-                }
-            }
-        })
-    })
-})
+
 
 $(function () {
     var echartsLeft = echarts.init(document.getElementById('echarts-left'))
