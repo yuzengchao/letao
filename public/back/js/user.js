@@ -18,7 +18,7 @@ $(function () {
             success: function (res) {
                 // console.log(res)
                 var htmlStr = template('usersList', res)
-                $('.lt-main tbody').html(htmlStr);
+                $('.lt-main tbody').html(htmlStr)
 
                 $('#paginator').bootstrapPaginator({
                     bootstrapMajorVersion: 3,
