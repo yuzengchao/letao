@@ -84,33 +84,38 @@
                         </div>
                         <div class="modal-body">
                             <!-- 一级分类 -->
-                            <div class="dropdown">
-                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
-                                    data-toggle="dropdown">
-                                    <span class="firstTxt">请选择一级分类</span>
-                                    <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <!-- 坑 -->
-                                </ul>
+                            <div class="form-group">
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                                        data-toggle="dropdown">
+                                        <span class="firstTxt">请选择一级分类</span>
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <!-- 坑 -->
+                                    </ul>
+                                </div>
+                                <input type="hidden" name="categoryId" class="categoryId">
                             </div>
                             <!-- 二级分类 -->
                             <div class="form-group mt-20">
                                 <input type="text" class="form-control" name="brandName" placeholder="请输入二级分类">
                             </div>
+                            <!-- 上传图片 -->
                             <div class="form-group mt-20">
                                 <label for="fileupload" class="btn btn-default">上传图片</label>
-                                <input type="file" data-url="/category/addSecondCategoryPic" id="fileupload" name='pic1' style='display:none'>
+                                <input type="file" data-url="/category/addSecondCategoryPic" id="fileupload" name='pic1'
+                                    style='display:none'>
                             </div>
                             <div class="form-group mt-20" id="imgBox">
                                 <img src="./images/none.png" style="width: 100px" class="uploadImg">
+                                <input type="hidden" name="brandLogo" class="brandLogo">
                             </div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-                            <button type="button" class="btn btn-primary">添加</button>
+                            <button type="submit" class="btn btn-primary ">添加</button>
                         </div>
-                        <!-- 上传图片 -->
 
                     </form>
                 </div>
@@ -155,7 +160,7 @@
 
     <script type='text/html' id='firstTpl'>
         {{each rows v i}}
-        <li><a href="#">{{v.categoryName}}</a></li>
+        <li><a href="#" data-id='{{v.id}}'>{{v.categoryName}}</a></li>
         {{/each}}
     </script>
 
@@ -163,7 +168,7 @@
     <script src="./lib/jquery/jquery.js"></script>
     <script src="./lib/bootstrap/js/bootstrap.js"></script>
     <script src="./lib/bootstrap-paginator/bootstrap-paginator.js"></script>
-    <script src="./lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
+    <script src="./lib/bootstrap-validator/js/bootstrapValidator.js"></script>
     <script src="./lib/artTemplate/template-web.js"></script>
     <script src="./lib/nprogress/nprogress.js"></script>
     <script src="./lib/jquery-fileupload/jquery.ui.widget.js"></script>
