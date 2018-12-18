@@ -14,7 +14,7 @@ $(function () {
             },
             dataType: 'json',
             success: function (res) {
-                // console.log(res)
+                console.log(res)
                 var htmlStr = template('productTpl', res)
                 $('tbody').html(htmlStr)
 
